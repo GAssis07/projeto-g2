@@ -1,31 +1,272 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Dashboard Análise da Qualidade do Ar no Brasil</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard - Qualidade do Ar no Brasil</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+}
+
+body{
+height:100vh;
+background:linear-gradient(135deg,#0f172a,#1e293b,#0f766e);
+display:flex;
+justify-content:center;
+align-items:center;
+padding:30px;
+color:white;
+}
+
+.container{
+
+width:100%;
+max-width:1000px;
+
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(15px);
+
+border-radius:25px;
+
+padding:50px;
+
+box-shadow:
+0 8px 32px rgba(0,0,0,.4);
+
+border:1px solid rgba(255,255,255,.15);
+
+}
+
+.header{
+
+margin-bottom:35px;
+
+}
+
+.badge{
+
+display:inline-block;
+
+padding:8px 18px;
+
+background:#14b8a6;
+
+border-radius:50px;
+
+font-size:14px;
+
+margin-bottom:20px;
+
+font-weight:600;
+
+}
+
+h1{
+
+font-size:42px;
+line-height:1.2;
+
+margin-bottom:20px;
+
+}
+
+.description{
+
+font-size:17px;
+opacity:.8;
+line-height:1.8;
+
+max-width:700px;
+
+}
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+
+margin-top:40px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.05);
+
+padding:30px;
+
+border-radius:20px;
+
+transition:.4s;
+
+border:1px solid rgba(255,255,255,.1);
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+background:rgba(255,255,255,.12);
+
+}
+
+.card h2{
+
+font-size:20px;
+
+margin-bottom:15px;
+
+}
+
+.card p{
+
+font-size:14px;
+
+opacity:.8;
+
+margin-bottom:25px;
+
+line-height:1.6;
+
+}
+
+.btn{
+
+display:inline-block;
+
+text-decoration:none;
+
+padding:12px 22px;
+
+border-radius:12px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.primary{
+
+background:#14b8a6;
+color:white;
+
+}
+
+.primary:hover{
+
+background:#0d9488;
+
+}
+
+.secondary{
+
+background:white;
+color:#111;
+
+}
+
+.secondary:hover{
+
+transform:scale(1.05);
+
+}
+
+.footer{
+
+margin-top:40px;
+font-size:13px;
+opacity:.6;
+text-align:center;
+
+}
+
+</style>
+
 </head>
+
 <body>
-    <h1>Dashboard Análise da Qualidade do Ar no Brasil</h1>
 
-    <p>
-        Projeto desenvolvido para a disciplina de Linguagem de Programação.
-    </p>
+<div class="container">
 
-    <h2>Links do Projeto</h2>
+<div class="header">
 
-    <ul>
-        <li>
-            <a href="https://projeto-g2-haazqkmtnnen9qe9ga8tnv.streamlit.app/" target="_blank">
-                Acessar Dashboard Interativo
-            </a>
-        </li>
+<span class="badge">
+🌎 Dashboard Interativo
+</span>
 
-        <li>
-            <a href="https://github.com/GAssis07/projeto-g2" target="_blank">
-                Repositório GitHub
-            </a>
-        </li>
-    </ul>
+<h1>
+Análise da Qualidade do Ar no Brasil
+</h1>
+
+<p class="description">
+Projeto desenvolvido para a disciplina de Linguagem de Programação com foco em análise de dados ambientais e visualização interativa sobre a qualidade do ar no Brasil.
+</p>
+
+</div>
+
+
+<div class="cards">
+
+<div class="card">
+
+<h2>📊 Dashboard</h2>
+
+<p>
+Acesse visualizações interativas, gráficos e análises sobre indicadores ambientais.
+</p>
+
+<a class="btn primary"
+href="https://projeto-g2-haazqkmtnnen9qe9ga8tnv.streamlit.app/"
+target="_blank">
+
+Abrir Dashboard
+
+</a>
+
+</div>
+
+
+<div class="card">
+
+<h2>💻 Código Fonte</h2>
+
+<p>
+Explore o repositório do projeto, arquivos e implementação utilizada.
+</p>
+
+<a class="btn secondary"
+href="https://github.com/GAssis07/projeto-g2"
+target="_blank">
+
+Ver GitHub
+
+</a>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+Desenvolvido por Gabriel Assis • Linguagem de Programação
+
+</div>
+
+</div>
 
 </body>
 </html>
