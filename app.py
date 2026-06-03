@@ -341,10 +341,11 @@ st.subheader(
 
 st.success("""
 
-A análise mostrou padrões relevantes sobre a qualidade do ar nas regiões brasileiras.
+Os resultados obtidos demonstram que a qualidade do ar não apresenta comportamento homogêneo entre as regiões brasileiras, existindo diferenças significativas nos indicadores ambientais analisados. A comparação entre regiões permitiu identificar localidades com maiores índices médios de poluição, enquanto a análise da distribuição do PM2.5 evidenciou variações relevantes entre cidades.
 
-Os filtros permitem explorar diferenças entre regiões e cidades, enquanto os KPIs e gráficos facilitam a identificação de tendências ambientais.
+A evolução temporal dos indicadores sugere padrões que podem representar mudanças ambientais ao longo do período analisado, permitindo identificar tendências de crescimento ou redução dos níveis de poluentes. A análise de correlação também possibilitou compreender possíveis relações entre fatores ambientais e a qualidade do ar.
 
-Essas informações podem apoiar políticas públicas e monitoramento ambiental.
+Dessa forma, o dashboard se apresenta como uma ferramenta de apoio à análise exploratória de dados ambientais, fornecendo informações relevantes para monitoramento, planejamento urbano e formulação de políticas públicas voltadas à sustentabilidade e à saúde da população.
+
 
 """)
